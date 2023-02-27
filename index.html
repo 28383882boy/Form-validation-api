@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      function validateform(){
+        var x  = document.forms["myForm"]["Name"].value
+      if (x ==""){
+       alert("Enter your name pls ");
+        return false;
+      }
+        else document.write("name sumbited");
+      }
+    </script>
+  </head>
+  <body>
+    <form name ="myForm" onsubmit="validateform()">
+      Name: <input type="text" name="Name"> 
+      <input type ="submit" value="submit">
+      
+    </form>
+  </body>
+</html>
+<!--Form validation api-->
